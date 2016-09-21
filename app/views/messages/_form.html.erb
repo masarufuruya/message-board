@@ -18,6 +18,12 @@
       </div>
   </div>
   <div class="form-group">
+      <%= f.label :age, '年齢', class: "col-sm-1 control-label" %>
+      <div class="col-sm-11">
+         <%= f.text_field :age, class: "form-control", type: "number", placeholder: "年齢" %>
+      </div>
+  </div>
+  <div class="form-group">
       <%= f.label :body, '内容', class: "col-sm-1 control-label" %>
       <div class="col-sm-11">
         <%= f.text_area :body, class: "form-control", placeholder: "メッセージ内容" %>      

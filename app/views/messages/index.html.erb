@@ -11,6 +11,8 @@
             </span>
             <span>
                 <%= message.body %>
+                (<%= link_to "編集", edit_message_path(message) %>)
+                (<%= link_to "削除", message, method: :delete, data: { confirm: "削除してもよろしいですか？" } %>)
             </span>
             <br>
           <% end %>
